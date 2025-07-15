@@ -51,6 +51,14 @@ Recommended settings: 0.20 mm layer height, 15 % infill, no supports.
 
 ## Setup
 ```bash
+# Clone the repo
 git clone https://github.com/kocyunus/reflex-meter.git
-cd reflex-meter/Arduino
-open ReflexMeter.ino    # Arduino IDE
+
+# Go to the firmware folder
+cd reflex-meter/firmware
+
+# Open the sketch in Arduino IDE (double‑click or use code ./ if you prefer VS Code)
+open ReflexMeter.ino     # macOS / Linux
+# veya
+start ReflexMeter.ino    # Windows PowerShell/CMD
+
