@@ -1,5 +1,8 @@
 # Reflex-meter
 Arduino‑based reaction‑time meter • MAX7219 LED matrix + 3D‑printed case
+## Final Look
+![Finished unit](docs/finished-unit.jpg)
+
 # Reflex Meter ⚡ ⏱️  
 Measure your reaction time in milliseconds with an **Arduino Uno**, a **MAX7219 8×8 LED matrix** and a single push‑button.
 
