@@ -44,6 +44,38 @@ Measure your reaction time in milliseconds with an **Arduino Uno**, a **MAX721
 > **VCC → 5 V**, **GND → GND**, **DIN → D11**, **CS → D10**, **CLK → D13**
 
 ![Wiring diagram](docs/wiring.png)
+/* =============================================================
+   USER CONFIGURATION & HACKING GUIDE
+   -------------------------------------------------------------
+   1) Pin mapping
+      - DIN, CS, CLK can be reassigned to any digital pins.
+      - BTN should stay on an interrupt‑capable pin (D2 or D3 on Uno).
+      - The status LED can be moved; just update LED define.
+
+   2) Display orientation
+      - Uncomment  #define FLIP_180  if your MAX7219 module is
+        mounted upside‑down.
+
+   3) 5×7 font table
+      - Covers ASCII 32‑126 plus Turkish chars (Ç, Ş, Ğ, Ü, Ö, İ).
+      - Add new glyphs by appending 7‑byte columns at the end.
+
+   4) 8×8 emoji icons
+      - Each icon is an 8‑byte bitmap (MSB = leftmost pixel).
+      - Insert new patterns in the  emoji[]  array, then point to
+        them in  drawEmoji(idx).
+
+   5) Reaction‑time ranking
+      - Thresholds (150 / 300 / 450 / 650 / 850 ms) and messages
+        live in the  loop()  if‑else block.
+      - Tweak ranges, swap emojis or change the scroll messages
+        to localize the game.
+
+   6) Scroll speed
+      -  scroll(text, delayMs);  // default delay = 85 ms per column
+        Smaller value  →  faster scroll.
+   Happy hacking & share your mods with #ReflexMeter!
+   ============================================================= */
 
 ## 3D Printing
 STLs are in `/3d-models`.  
